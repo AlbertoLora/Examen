@@ -1,0 +1,144 @@
+/****** Estilo general ******/
+
+body{
+    background-color: pink;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/****** Estilo de header ******/
+header{
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url(./imagenes/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 43vh;
+    width: 90%;
+    position: relative;
+}
+header h1{
+    margin-top: 0;
+    color: white;
+    position: absolute;
+    width: auto;
+    top:99px;
+    left: 50px;
+}
+
+/******* Estilo del nav *******/
+nav{
+    background-color: rgb(40, 200, 248);
+    margin-top: 0;
+    width: 90%;
+    margin: auto;
+}
+nav ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 1% 0;
+    padding-left: 1%;
+}
+nav ul li{
+    display: inline-block;
+    padding-right: 2%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: indianred;
+}
+
+/****** Estilo del main ******/
+main{
+    width: 90%;
+    margin: auto;
+    margin-top: 0;
+    background-color: silver;
+}
+main h1{
+    margin-top: 0;
+    padding-top: 2%;
+    text-align: center;
+    color: indianred;
+}
+main p{
+    margin: 1.5%;
+    text-indent: 5%;
+}
+main img{
+    width: 18%;
+    margin: 3%;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.315) 5px 5px;
+}
+main ul{
+    margin-bottom: 0;
+    padding-bottom: 3%;
+    padding-left: 6%;
+}
+
+/******* Estilo de footer *******/
+footer{
+    margin: auto;
+    width: 90%;
+    background-color: rgb(40, 200, 248);
+}
+footer p{
+    margin-top: 0;
+    padding: 1% 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/******** Medias queries **********/
+@media only screen and (max-width: 900px){
+    main img{
+        width: 40%;
+        margin: 4.7%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    nav ul li{
+        display: block;
+        padding-top: 2%;
+        padding-bottom: 4%;
+        padding-left: 2%;
+    }
+    header{
+        background-image: url(./imagenes/header2.png);
+        height: 100vh;
+    }
+    header h1{
+        padding-top: 10%;
+        position: static;
+        text-align: center;
+    }
+    main h1{
+        padding: 5% 15%;
+        text-align: center;
+        font-size: 150%;
+    }
+    main p{
+        margin: 4% 8%;
+        text-align: justify;
+    }
+    main ul{
+        margin-left: 6%;
+        padding-bottom: 9%;
+    }
+    main img{
+        width: 80%;
+        margin: 10%;
+    }
+
+}
+
